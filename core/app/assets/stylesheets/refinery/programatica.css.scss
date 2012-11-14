@@ -1,0 +1,89 @@
+#site_bar{
+  background: rgba(0,0,0,0.5) !important;
+  border-bottom: 1px solid #494949 !important;
+}
+
+#site_bar_refinery_cms_logo{
+  display:none;
+}
+
+body{
+  background: image-url('fondon_backend.jpg') no-repeat fixed left bottom; 
+  background-size: cover !important;
+}
+
+span.label{
+  background: #B3B3B3;
+  color: white;
+  border-radius: 10px;
+  padding: 0 5px;
+}
+
+#menu a.active{
+  height: 14px;
+  margin-top:4px;
+}
+
+#menu a:not(.active) {
+  height: 5px;
+  margin-top: 16px;
+  text-shadow:  1px 1px 3px #555;
+}
+#menu a#menu_reorder{
+  margin-top: 15px;
+}
+header #menu a#menu_reorder_done{
+  height: 16px;
+}
+
+#menu a:hover:not(.active){
+  height: 15px;
+  margin-top: 7px;
+  text-shadow: none;
+  color: #FF8E56;
+}
+
+input.button, a.button, #content a.button, span.button-wrapper, span.button-wrapper input, .ui-dialog .ui-dialog-titlebar {
+  background: #2F3E47;
+}
+
+.ui-dialog {
+  border: 4px solid #2F3E47;
+}
+
+input.button:hover, a.button:hover, #content a.button:hover, 
+span.button-wrapper:hover, span.button-wrapper:hover input, 
+.wym_skin_refinery .wym_section a:hover, 
+.wym_skin_refinery .wym_section a.selected {
+  background-color: #536169!important;
+}
+
+#actions li a, .dialog #existing_image_size_area ul li.selected a {
+  border: 1px solid #727D83;
+  background-color: #CACED1;
+}
+
+#actions li a:hover{
+  background-color: #EBEBEB;
+}
+
+#actions li a:active{
+  background-color: #5C5C5C;
+}
+
+#switch_locale_picker li.selected a img {
+  border-color: #536169;
+}
+
+#content a {
+  border-bottom: 1px dotted #F50;
+}
+
+.parent .field, .parent .add_remove_buttons{
+  margin-left: 20px;
+  padding-left: 20px;
+}
+
+ul#current_locale{
+  display: none;
+}
