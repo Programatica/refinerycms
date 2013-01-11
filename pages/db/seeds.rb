@@ -40,12 +40,12 @@ if Refinery::Page.by_title("About").empty?
               })
 end
 
-(Refinery.i18n_enabled? ? Refinery::I18n.frontend_locales : [:es]).each do |lang|
-  I18n.locale = lang
+(Refinery.i18n_enabled? ? Refinery::I18n.frontend_locales : [:en]).each do |lang|
   {'home' => "Home",
    'page-not-found' => 'Page not found',
    'about' => 'About'
   }.each do |slug, title|
-    Refinery::Page.by_title(title).each { |page| page.update_attributes(:slug => slug) }
+    I18n.locale = :en
+    Refinery::Page.by_title(title).each {|page| I18n.locale = lang; page.update_attributes(:slug => slug)}
   end
 end
