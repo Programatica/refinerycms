@@ -11,8 +11,8 @@
   width: 990px;
 }
 #site_bar {
-  background: #22a7f2;
-  border-bottom: 0px none;
+  background: rgba(0,0,0,0.5) !important;
+  border-bottom: 1px solid #494949 !important;
 }
 a#site_bar_refinery_cms_logo {
   left: 448px;
@@ -78,13 +78,13 @@ a#site_bar_refinery_cms_logo {
   height: 29px;
   margin-top: 9px;
   overflow: hidden;
-  &:hover {
-    border-bottom: none;
-    opacity: 1;
-    img {
-      margin-top: -29px;
-    }
+  opacity: 0.5;
+  &:hover {    
+    opacity: 1;    
   }
+}
+a#site_bar_refinery_cms_logo img{
+  margin-top: 0!important;
 }
 .ie7 #site_bar #editor_switch a {
   height: 26px;
